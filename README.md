@@ -2,6 +2,8 @@
 
 This is a daemon that checks the ticker for configured cryptocurrencies and notifies you about their current worth.
 
+![screenshot](screenshot.png)
+
 ## Features
 
 - Polls current currency info from coinmarketcap.com
