@@ -10,6 +10,7 @@ This is a daemon that checks the ticker for configured cryptocurrencies and noti
 - Displays a notification for each poll and each currency with configurable delays
 - A click on the notification opens the selected currency in the default browser
 - Daemonized. Once you started it, you can kill your shell and it will remain running.
+- Should work on Windows, macOS (tested) and Linux.
 
 ## Usage
 
