@@ -31,7 +31,7 @@ Since I have no idea how to properly get the PID without creating a temp file to
 Here's what the command does:
 
 1. `ps aux` prints out all running processes (with great detail)
-2. `grep coinwatch/index.js` just filters out every line containing the `"coinwatch/index.js"` string (When only one daemon is running, it will find two lines, where one of them is the process for grep itself)
+2. `grep coinwatch.js` just filters out every line containing the `"coinwatch.js"` string (When only one daemon is running, it will find two lines, where one of them is the process for grep itself)
 3. `awk '{print $2}'` picks out the second "column" which is the PID in the case of `ps aux`
 4. `kill -9` sends `SIGKILL` to the specified processes. Since the grep process has finished by now, it will print one `no such process` error and kill only the daemon.
 
