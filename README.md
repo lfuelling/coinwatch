@@ -1,11 +1,18 @@
 # Coinwatch
 
-This is a daemon that checks the ticker for configured cryptocurrencies and notofies you about them. This currently works flawlessly when using one or two currencies. When using three or more, the notifications will appear too fast (I'm not sure if I want to fix this).
+This is a daemon that checks the ticker for configured cryptocurrencies and notofies you about them. This currently works flawlessly when using one or two currencies. When using three or more, the notifications will appear a bit fast, but you can still read it if you focus. 😇
+
+## Features
+
+- Polls current currency info from coinmarketcap.com
+- Displays a notification for each poll and each currency with configurable delays
+- A click on the notification opens the selected currency in the default browser
+- Daemonized. Once you started it, you can kill your shell and it will remain running.
 
 ## Usage
 
 0. `npm i`
-1. Configure your currencies in `config.js`. Example: `module.exports = {currencies: ['monero', 'fantomcoin']}`
+1. Configure your currencies in `config.js`. Example: `currencies: ['monero', 'fantomcoin']`
 2. Start the daemon: `$ node index.js`
 
 ### Killing the daemon
