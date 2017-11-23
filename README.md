@@ -8,7 +8,7 @@ This is a daemon that checks the ticker for configured cryptocurrencies and noti
 
 - Polls current currency info from coinmarketcap.com
 - Displays a notification for each poll and each currency with configurable delays
-- A click on the notification opens the selected currency in the default browser
+- A click on the notification opens the selected currency in the default browser (macOS only)
 - Daemonized. Once you started it, you can kill your shell and it will remain running.
 - Should work on Windows, macOS (tested) and Linux.
 
@@ -23,7 +23,7 @@ This is a daemon that checks the ticker for configured cryptocurrencies and noti
 You will like this one. 🙃
 
 ```
-kill -9 $(ps aux | grep coinwatch/index.js | awk '{print $2}')
+kill -9 $(ps aux | grep coinwatch.js | awk '{print $2}')
 ```
 
 Since I have no idea how to properly get the PID without creating a temp file to push the data around I decided to just use a bash chain to kill the daemon.

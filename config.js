@@ -1,5 +1,5 @@
 module.exports = {
-	currencies: ['monero', 'fantomcoin', 'bitcoin', 'iota'],
+	currencies: ['monero', 'fantomcoin'],
 	interval: 10,
 	reqst_delay: 5000,
 	notif_delay: 2000
