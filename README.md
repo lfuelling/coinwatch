@@ -33,3 +33,5 @@ Here's what the command does:
 4. `kill -9` sends `SIGKILL` to the specified processes. Since the grep process has finished by now, it will print one `no such process` error and kill only the daemon.
 
 Isn't this a nice workaround? :)
+
+I also tried adding this as `npm stop` script, but it fails to find the PID somehow. Dunno, Duncare.
