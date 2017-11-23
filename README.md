@@ -1,6 +1,6 @@
 # Coinwatch
 
-This is a daemon that checks the ticker for configured cryptocurrencies and notofies you about them. This currently works flawlessly when using one or two currencies. When using three or more, the notifications will appear a bit fast, but you can still read it if you focus. 😇
+This is a daemon that checks the ticker for configured cryptocurrencies and notifies you about their current worth.
 
 ## Features
 
